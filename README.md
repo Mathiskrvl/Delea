@@ -40,12 +40,12 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 ##### Solution :
 
-$f(x) = R\cdot u\cdot\alpha\cdot\exp(-u \cdot \alpha \cdot x),\quad \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
+$f(x) = R\cdot u\cdot\alpha\cdot\exp(-u \cdot \alpha \cdot x),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
 
 #### Token
 
 1. Les tokens sont transferable
-2. Lorsque l'on utilise le model nous transferons des tokens vers le contrat, le prix est fixer par la fonction de distribution.
+2. Lorsque l'on utilise le model nous transferons des tokens vers le contrat, le prix est fixer par la fonction de distribution. 
 3. Les tokens sont divisables
 
 ### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
