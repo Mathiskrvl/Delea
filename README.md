@@ -32,8 +32,15 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 #### Fonction de distribution
 
+##### Critère :
+
 1. $\int_{x>0}^{+\infty} f(x) \, dx = R$ avec R ce qui reste de token dans le contrat
 2. $\lim_{x \to +\infty} f(x) = 0$
+3. $\forall x_1, x_2, \ x_1 < x_2 \implies f(x_1) > f(x_2)$
+
+##### Solution :
+
+$f(x) = R \cdot u \cdot \alpha \cdot \exp(-u \cdot \alpha \cdot x), \quad \forall u, \alpha > 0 \text{ avec } u \text{ le facteur d'update et } \alpha \text{ le facteur de rapidité.}$
 
 ### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
 
