@@ -32,7 +32,7 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 #### Fonction de distribution
 
-1. $\int f(x) \, dx = R$ avec R ce qui reste de token dans le contrat
+1. $\int_{x>0}^{+\infty} f(x) \, dx = R$ avec R ce qui reste de token dans le contrat
 2. $\lim_{x \to +\infty} f(x) = 0$
 
 ### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
