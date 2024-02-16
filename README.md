@@ -40,7 +40,7 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
 ##### Solution :
 
-$f(x) = R\cdot u\cdot\alpha\cdot\exp(-u \cdot \alpha \cdot x),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
+$f(x) = R\cdot\alpha\cdot\exp(-\frac{\alpha \cdot x}{u}),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
 
 #### Jeton
 
