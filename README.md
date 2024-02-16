@@ -36,7 +36,7 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 1. $\int_{x>0}^{+\infty} f(x) \, dx = R,\quad\text{avec } R \text{ ce qui reste de token dans le contrat }$
 2. $\lim_{x \to +\infty} f(x) = 0$
-3. $\forall x_1, x_2, \ x_1 < x_2 \implies f(x_1) > f(x_2)$
+3. $\forall x_1, x_2,\quad x_1 < x_2 \implies f(x_1) > f(x_2)$
 
 ##### Solution :
 
