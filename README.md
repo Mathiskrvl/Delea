@@ -6,9 +6,9 @@ Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des 
 
 ![Architecture de Delea](Delea-graph.png)
 
-## Description
+### Demo Entrainement dans le web [![Live Demo](https://img.shields.io/badge/live-demo-brightgreen)](https://mathiskrvl.github.io/Burn-Train-web/)
 
-### Création
+### Déploiment du Contrat
 
 1. Un utilisateur crée un modèle de Deep Learning compilé avec Wasm (Rust + Burn pour créer les modèles).
 2. Une fois créé, l'utilisateur déploie son modèle sur un Smart Contrat prévu à cet effet.
@@ -34,13 +34,13 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
 ##### Propriétés :
 
-1. $\int_{x>0}^{+\infty} f(x) \, dx = R,\quad\text{avec } R \text{ ce qui reste de jeton dans le contrat }$
+1. $\int_{x>=0}^{+\infty} f(x) \, dx = R,\quad\text{avec } R \text{ ce qui reste de jeton dans le contrat }$
 2. $\lim_{x \to +\infty} f(x) = 0$
 3. $\forall x_1, x_2,\quad x_1 < x_2 \implies f(x_1) > f(x_2)$
 
 ##### Solution :
 
-$f(x) = R\cdot\alpha\cdot\exp(-\frac{\alpha \cdot x}{u}),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
+$f(x) = \frac{R\cdot\alpha\}{u}cdot\exp(-\frac{\alpha \cdot x}{u}),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
 
 #### Jeton
 
