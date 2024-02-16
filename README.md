@@ -16,11 +16,11 @@ Project of Decentralized Learning
 ### Contrat
 
 1. Lorsque le contrat est crée, un nombre de token fix et ne pourra jamais être modifié.
-2. Le createur reçoit 5% (valeur modifiable) de la pool et l'accès a la fonction RollBack
+2. Le createur reçoit un 5% de la pool et l'accès a la fonction RollBack
 3. Le contrat expose 2 fonctions publiquement train et infere.
     1. Train: Entraine le model directement dans le browser (ou wasm runtime) et reçoit une récompense une fois le retour de l'environnement.
     2. Infere: Envoie des tokens au contrat en écheange le contrat lui permet d'utiliser le model.
-4. Les 2 plus gros holder de token ont accès à la fonction RollBack,
+4. Les 2 plus gros holder de token ont accès à la fonction RollBack
 
 Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
@@ -34,13 +34,19 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 ##### Critère :
 
-1. $\int_{x>0}^{+\infty} f(x) \, dx = R$ avec R ce qui reste de token dans le contrat
+1. $\int_{x>0}^{+\infty} f(x) \, dx = R,\quad\text{avec } R \text{ ce qui reste de token dans le contrat }$
 2. $\lim_{x \to +\infty} f(x) = 0$
 3. $\forall x_1, x_2, \ x_1 < x_2 \implies f(x_1) > f(x_2)$
 
 ##### Solution :
 
-$f(x) = R \cdot u \cdot \alpha \cdot \exp(-u \cdot \alpha \cdot x), \quad \forall u, \alpha > 0 \text{ avec } u \text{ le facteur d'update et } \alpha \text{ le facteur de rapidité.}$
+$f(x) = R\cdot u\cdot\alpha\cdot\exp(-u \cdot \alpha \cdot x),\quad \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
+
+#### Token
+
+1. Les tokens sont transferable
+2. Lorsque l'on utilise le model nous transferons des tokens vers le contrat, le prix est fixer par la fonction de distribution.
+3. Les tokens sont divisables
 
 ### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
 
