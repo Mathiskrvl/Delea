@@ -47,9 +47,3 @@ $f(x) = \frac{R\cdot\alpha\}{u}cdot\exp(-\frac{\alpha \cdot x}{u}),\ \forall u, 
 1. Les jetons sont transferable
 2. Lorsqu'on utilise le modèle, nous transferons des jetons vers le contrat, le prix est fixé par la fonction de distribution. 
 3. Les jetons sont divisables
-
-### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
-
-- Burn est une librairie Rust, qui permet de créer et utiliser des modèles de Deep Learning avec plusieur Backend possible, dont WebGPU
-- Burn permet d'importer tout type de modèle (ONNX, safetensor, PytorchTensor)
-- Burn est encore en pleine évolution, des nouvelles features comme la quantization sont sur la roadmap 2024
