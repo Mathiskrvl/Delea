@@ -1,8 +1,6 @@
 # Delea
 
-Project of Decentralized Learning
-
-## Abstract
+Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des contrats intelligents pour gérer et distribuer des modèles de deep learning. Les utilisateurs peuvent créer des modèles et les déployer sur des contrats qui émettent des tokens fixes et non modifiables. Le contrat permet d'entraîner le modèle et d'inférer en échange de tokens. La distribution des tokens est fixée à l'avance et la distribution est fait en fonction du nombre de token possédé par le contrat.
 
 ## Architecture
 
