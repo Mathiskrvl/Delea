@@ -34,3 +34,9 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 1. $\int f(x) \, dx = R $ avec R ce qui reste de token dans le contrat
 2. $\lim_{x \to +\infty} f(x) = 0$
+
+### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
+
+- Burn est une librairie Rust, qui permet de crée et utiliser des modèles de Deep Learning avec plusieur Backend possible dont WebGPU
+- Burn permet d'importer tout type de model (ONNX, safetensor, PytorchTensor)
+- Burn est encore en pleine évolution, des nouvelles features comme la quantization sont sur la roadmap 2024
