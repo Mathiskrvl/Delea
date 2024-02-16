@@ -2,6 +2,8 @@
 
 Project of Decentralized Learning
 
+## Abstract
+
 ## Architecture
 
 ![Architecture de Delea](Delea-graph.png)
