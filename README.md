@@ -24,7 +24,7 @@ Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des 
 
 Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
-### Tokenomic
+### Modèle de distribution de jetons
 
 1. Aucune inflation n'est possible car le nombre de jeton créé est fixé à la création du contrat et ne pourra plus jamais être modifié.
 2. Un fractionnement des jetons est cependant possible. (Fonctionnalité à discuter)
@@ -42,7 +42,7 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
 $f(x) = R\cdot u\cdot\alpha\cdot\exp(-u \cdot \alpha \cdot x),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
 
-#### jeton
+#### Jeton
 
 1. Les jetons sont transferable
 2. Lorsqu'on utilise le modèle, nous transferons des jetons vers le contrat, le prix est fixé par la fonction de distribution. 
