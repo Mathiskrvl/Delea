@@ -1,6 +1,6 @@
 # Delea
 
-Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des contrats intelligents pour gérer et distribuer des modèles de deep learning. Les utilisateurs peuvent créer des modèles et les déployer sur des contrats qui émettent des tokens fixes et non modifiables. Le contrat permet d'entraîner le modèle et d'inférer en échange de tokens. La distribution des tokens est fixée à l'avance et la distribution est faite en fonction du nombre de token possédé par le contrat.
+Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des contrats intelligents pour gérer et distribuer des modèles de deep learning. Les utilisateurs peuvent créer des modèles et les déployer sur des contrats qui émettent des jetons fixes et non modifiables. Le contrat permet d'entraîner le modèle et d'inférer en échange de jetons. La distribution des jetons est fixée à l'avance et la distribution est faite en fonction du nombre de token possédé par le contrat.
 
 ## Architecture
 
@@ -15,26 +15,26 @@ Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des 
 
 ### Smart Contrat
 
-1. Lorsque le contrat est créé, un nombre de token est fixé et ne pourra jamais être modifié.
+1. Lorsque le contrat est créé, un nombre de jeton est fixé et ne pourra jamais être modifié.
 2. Le créateur reçoit 5% de la pool et l'accès à la fonction RollBack
 3. Le contrat expose 2 fonctions publiquement train et infere.
     1. Train: Entraine le modèle directement dans le browser (ou wasm runtime) et reçoit une récompense une fois le retour de l'environnement.
-    2. Infere: Envoie des tokens au contrat en échange, le contrat lui permet d'utiliser le modèle.
-4. Les 2 plus gros holders de token ont accès à la fonction RollBack
+    2. Infere: Envoie des jetons au contrat en échange, le contrat lui permet d'utiliser le modèle.
+4. Les 2 plus gros holders de jeton ont accès à la fonction RollBack
 
 Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
 ### Tokenomic
 
-1. Aucune inflation n'est possible car le nombre de token créé est fixé à la création du contrat et ne pourra plus jamais être modifié.
-2. Un fractionnement des tokens est cependant possible. (Fonctionnalité à discuter)
+1. Aucune inflation n'est possible car le nombre de jeton créé est fixé à la création du contrat et ne pourra plus jamais être modifié.
+2. Un fractionnement des jetons est cependant possible. (Fonctionnalité à discuter)
 3. La distribution ce fera avec une fonction qui permmettra aux premiers long train du modèle recevront plus que les prochains.
 
 #### Fonction de distribution
 
 ##### Propriétés :
 
-1. $\int_{x>0}^{+\infty} f(x) \, dx = R,\quad\text{avec } R \text{ ce qui reste de token dans le contrat }$
+1. $\int_{x>0}^{+\infty} f(x) \, dx = R,\quad\text{avec } R \text{ ce qui reste de jeton dans le contrat }$
 2. $\lim_{x \to +\infty} f(x) = 0$
 3. $\forall x_1, x_2,\quad x_1 < x_2 \implies f(x_1) > f(x_2)$
 
@@ -42,11 +42,11 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
 $f(x) = R\cdot u\cdot\alpha\cdot\exp(-u \cdot \alpha \cdot x),\ \forall u, \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité, }u \text{ le facteur d'update et }x\text{ le nombre d'uptade effectuer}$
 
-#### Token
+#### jeton
 
-1. Les tokens sont transferable
-2. Lorsqu'on utilise le modèle, nous transferons des tokens vers le contrat, le prix est fixé par la fonction de distribution. 
-3. Les tokens sont divisables
+1. Les jetons sont transferable
+2. Lorsqu'on utilise le modèle, nous transferons des jetons vers le contrat, le prix est fixé par la fonction de distribution. 
+3. Les jetons sont divisables
 
 ### Framework Burn [![Burn repo](https://img.shields.io/badge/Burn-%20repo-green)](https://github.com/tracel-ai/burn)
 
