@@ -32,5 +32,5 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts
 
 #### Fonction de distribution
 
-1. $\int f(x) \, dx = R $ avec R ce qui reste de token dans le contrat
+1. $\int f(x) \, dx = R$ avec R ce qui reste de token dans le contrat
 2. $\lim_{x \to +\infty} f(x) = 0$
