@@ -44,18 +44,18 @@ $f(x) = \frac{R\cdot\alpha\}{u}\cdot\exp(-\frac{\alpha \cdot x}{u}),\ \forall u,
 
 #### Jeton
 
-1. Les jetons sont transferable
+1. Les jetons sont transferables
 2. Lorsqu'on utilise le modèle, nous transferons des jetons vers le contrat, le prix est fixé par la fonction de distribution. 
 3. Les jetons sont divisables
 
 ### Sécurité
 
-Utilisation de cryptage process, avec fully homomorphic encryption (FHE) => Cela permettra de que l'utilisateur puissent utiliser et posséder le modèle mets de dépendre du contrat et la nécissité de payer les fees pour utiliser les models.
+Utilisation d'un processus de chiffrement "end to end" , avec fully homomorphic encryption (FHE) => Cela permettra que l'utilisateur puisse utiliser et posséder le modèle mais de dépendre du contrat et la nécessité de payer les fees pour utiliser les modèles.
 
 ### Stockage
 
-Utilisation de IPFS (InterPlanetary File System) pour stocker les modèles
+Utilisation de IPFS (InterPlanetary File System) pour stocker les modèles.
 
 ### Système de validation
 
-Mise en place d'un système de validation, lors l'update d'un utilisateur les récompences seront bloqué jusqu'a que d'autres user valide(avant de train à son tour) pour libérer la récompence
+Mise en place d'un système de validation: lors de l'update d'un utilisateur les récompenses seront bloquées jusqu'à ce que d'autres utilisateurs valident (avant d'entrainer à son tour) pour libérer la récompense.
