@@ -4,7 +4,7 @@ Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des 
 
 ## Architecture
 
-![Architecture de Delea](Delea-graph.png)
+![Architecture de Delea](Archi_globale.png)
 
 ### Demo Entrainement dans le web [![Live Demo](https://img.shields.io/badge/live-demo-brightgreen)](https://mathiskrvl.github.io/Burn-Train-web/)
 
