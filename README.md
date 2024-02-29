@@ -72,3 +72,7 @@ Une solutions pour l'entrainement de la data pourra être developpé par la suit
 
 Pour l'instant aucune mesure pour regler ce problème, mais des mesures arrive,
 en attendant l'entrainement se fera de façon synchrone avec une file d'attente en fonction de ça puissance de calcul.
+
+### Quantization
+
+In comming par la suite
