@@ -8,6 +8,10 @@ Le projet Delea vise à décentraliser l'apprentissage machine en utilisant des 
 
 ### Demo Entrainement dans le web [![Live Demo](https://img.shields.io/badge/live-demo-brightgreen)](https://mathiskrvl.github.io/Burn-Train-web/)
 
+## Création d'un modèle
+
+![Création d'un modèle via le contrat](Model_creation.png)
+
 ### Déploiment du Contrat
 
 1. Un utilisateur crée un modèle de Deep Learning compilé avec Wasm (Rust + Burn pour créer les modèles).
