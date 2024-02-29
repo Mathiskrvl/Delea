@@ -65,14 +65,14 @@ Mise en place d'un système de validation: lors de l'update d'un utilisateur les
 
 ### Donnée d'entrainement
 
-Pour l'instant des modèles de type self-learning seront disponibles
-Une solutions pour l'entrainement de la data pourra être developpé par la suite
+Pour l'instant, des modèles de type self-learning seront disponibles.
+Une solutions pour l'entrainement de la data pourra être développée par la suite.
 
 ### Asyncronité de l'entrainement
 
-Pour l'instant aucune mesure pour regler ce problème, mais des mesures arrive,
-en attendant l'entrainement se fera de façon synchrone avec une file d'attente en fonction de ça puissance de calcul.
+Pour l'instant aucune mesure pour règler ce problème, mais des mesures arrivent.
+Pour le moment, l'entrainement se fera de façon synchrone avec une file d'attente en fonction de la puissance de calcul de l'utilisateur.
 
 ### Quantization
 
-In comming par la suite
+In comming...
