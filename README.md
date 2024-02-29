@@ -70,7 +70,7 @@ Mise en place d'un système de validation: lors de l'update d'un utilisateur les
 ### Donnée d'entrainement
 
 Pour l'instant, des modèles de type self-learning seront disponibles.
-Une solutions pour l'entrainement de la data pourra être développée par la suite.
+Une solutions pour l'entrainement avec de la data pourra être développée par la suite.
 
 ### Asyncronité de l'entrainement
 
