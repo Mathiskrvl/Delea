@@ -50,7 +50,10 @@ $f(x) = \frac{R\cdot\alpha\}{u}\cdot\exp(-\frac{\alpha \cdot x}{u}),\ \forall u,
 
 ### Sécurité
 
-Utilisation d'un processus de chiffrement "end to end" , avec fully homomorphic encryption (FHE) => Cela permettra que l'utilisateur puisse utiliser et posséder le modèle mais de dépendre du contrat et la nécessité de payer les fees pour utiliser les modèles.
+1. Le modele est public
+2. Le modele ne peut pas etre utilisable sans une interaction avec le contrat
+3. Cette autorisation doit etre actif de façon temporaire (nombre d'inference ou d'uptade)
+4. Cette autorisation ne dois pu fonctionner une fois la limite d'utilisation utilisé
 
 ### Stockage
 
@@ -59,3 +62,13 @@ Utilisation de IPFS (InterPlanetary File System) pour stocker les modèles.
 ### Système de validation
 
 Mise en place d'un système de validation: lors de l'update d'un utilisateur les récompenses seront bloquées jusqu'à ce que d'autres utilisateurs valident (avant d'entrainer à son tour) pour libérer la récompense.
+
+### Donnée d'entrainement
+
+Pour l'instant des modèles de type self-learning seront disponibles
+Une solutions pour l'entrainement de la data pourra être developpé par la suite
+
+### Asyncronité de l'entrainement
+
+Pour l'instant aucune mesure pour regler ce problème, mais des mesures arrive,
+en attendant l'entrainement se fera de façon synchrone avec une file d'attente en fonction de ça puissance de calcul.
