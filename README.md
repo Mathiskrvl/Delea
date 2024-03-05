@@ -44,7 +44,9 @@ Si il y a un conflit entre le créateur et les holders, les holders gagneronts.
 
 ##### Solution :
 
-$f(x) = R\cdot\alpha\cdot\exp(-\alpha \cdot x),\ \forall \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité et }x\text{ le nombre d'uptade effectuer}$
+$f(x) = R\cdot\alpha\cdot\exp(-\alpha \cdot x),\ \forall \alpha > 0\text{ avec }\alpha\text{ le facteur de rapidité et }x\text{ le nombre d'uptade effectuer}$ \
+Ainsi la quantité de token est l'aire sous la courbe du nombre d'update: \
+$\int_{0}^{x}  R\cdot\alpha\cdot\exp(-\alpha \cdot x)\,dx = R\cdot(1 - \exp(-\alpha \cdot x))$
 
 #### Jeton
 
